@@ -13,7 +13,5 @@ resolvers += "twitter-repo" at "http://maven.twttr.com"
 libraryDependencies ++= Seq()
 
 libraryDependencies ++= Seq(
-  "org.scalatest" %% "scalatest"  % "2.2.0" % "test",
-  "com.twitter" %% "finagle-core" % "6.2.0",
-  "com.twitter" %% "finagle-http" % "6.2.0"
+ "com.twitter" %% "finatra" % "1.5.3"
 )
