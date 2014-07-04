@@ -1,1 +1,1 @@
-web: target/start Web
+web: target/start Web -Dcom.twitter.finatra.config.port=:$PORT
