@@ -219,7 +219,7 @@ object App extends FinatraServer {
 
   }
 
-  setPropertyFor("com.twitter.finatra.config.port", ":" + System.getenv("Port"))
+  System.setProperty("com.twitter.finatra.config.port", ":" + System.getenv("PORT"))
 
   register(new ExampleApp())
 }
