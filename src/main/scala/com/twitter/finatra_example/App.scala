@@ -5,7 +5,7 @@ import com.twitter.finatra.ContentType._
 
 object App extends FinatraServer {
 
-  
+
   class ExampleApp extends Controller {
 
     /**
@@ -218,6 +218,8 @@ object App extends FinatraServer {
     }
 
   }
+
+  setPropertyFor("com.twitter.finatra.config.port", ":" + System.getenv("Port"))
 
   register(new ExampleApp())
 }
